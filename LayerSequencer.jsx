@@ -23,13 +23,20 @@ dlg.alertBtnsPnlOutpoint.moveEndRb = dlg.alertBtnsPnlOutpoint.add("radiobutton",
 dlg.alertBtnsPnlOutpoint.pinEndRb = dlg.alertBtnsPnlOutpoint.add("radiobutton", undefined, "pin end to current position");
 dlg.alertBtnsPnlOutpoint.moveEndRb.value = true;
 
+dlg.alertBtnsPnlGrouping = dlg.add("panel {orientation: 'row', text: 'Grouping'}", undefined, "Grouping");
+dlg.alertBtnsPnlGrouping.titleSt = dlg.alertBtnsPnlGrouping.add("statictext", undefined, "number of grouped layers:");
+dlg.alertBtnsPnlGrouping.msgEt = dlg.alertBtnsPnlGrouping.add("edittext {characters: 5, text: '1', alignment: 'right'}", undefined, "1");
+
 dlg.btnPnlStartCancel = dlg.add("panel {orientation: 'row', text: 'Run LayerSequencer'}", undefined, "Run LayerSequencer");
-dlg.btnPnlStartCancel.cancelBtn = dlg.btnPnlStartCancel.add("button", undefined, "Exit",{name:"cancel"});
+dlg.btnPnlStartCancel.cancelBtn = dlg.btnPnlStartCancel.add("button", undefined, "Cancel",{name:"cancel"});
 dlg.btnPnlStartCancel.runBtn = dlg.btnPnlStartCancel.add("button", undefined, "Run",{name:"run"});
 
 
 
 dlg.btnPnlStartCancel.runBtn.onClick = function(){
+
+        var frameLength = 1/app.project.activeItem.frameRate;
+        
         //read value from GUI
         var realtiveToCurrent = dlg.alertBtnsPnlMode.alignCurrentRb.value;
         var relativeToStart = dlg.alertBtnsPnlMode.alignStartRb.value;
@@ -38,6 +45,22 @@ dlg.btnPnlStartCancel.runBtn.onClick = function(){
         var pinEnd = dlg.alertBtnsPnlOutpoint.pinEndRb.value;
         
         var distance = parseFloat(dlg.alertBtnsPnlDistance.msgEt.text);
+        if (isNaN(distance)) {
+            distance = 0;
+            }
+        dlg.alertBtnsPnlDistance.msgEt.text = distance;
+        
+        var groupSize = parseInt(dlg.alertBtnsPnlGrouping.msgEt.text);
+        if (isNaN(groupSize)) {
+            groupSize = 1;
+            }
+        if (groupSize < 1) {
+            groupSize = 1;
+            }
+        groupSize = Math.floor(groupSize);
+        dlg.alertBtnsPnlGrouping.msgEt.text = groupSize
+        
+        
         //alert(distance*2);
         //parseInt(thisComp.layer("text layer").text.sourceText)
         //parseFloat(thisComp.layer("text layer").text.sourceText)
@@ -58,21 +81,21 @@ dlg.btnPnlStartCancel.runBtn.onClick = function(){
                     var oldStart = selectedLayers[i].startTime;
                     
                     if(realtiveToCurrent) {
-                        selectedLayers[i].startTime=selectedLayers[i].startTime+i*distance/app.project.activeItem.frameRate;
+                        selectedLayers[i].startTime=selectedLayers[i].startTime+Math.floor(i/groupSize)*distance*frameLength;
                     }
                 
                     if(relativeToStart) {
-                        selectedLayers[i].startTime=i*distance/app.project.activeItem.frameRate;
+                        selectedLayers[i].startTime=Math.floor(i/groupSize)*distance*frameLength;
                     }
                 
                     if(relativeToCursor) {
-                        selectedLayers[i].startTime=currentTime+i*distance/app.project.activeItem.frameRate;
+                        selectedLayers[i].startTime=currentTime+Math.floor(i/groupSize)*distance*frameLength;
                         
                     }
                 
                     if (pinEnd){
                             if(oldOut  <selectedLayers[i].startTime){ //wenn outpoint vor inpoint liegen würde, Länge auf 1 Frame setzen
-                                    selectedLayers[i].outPoint = selectedLayers[i].startTime + (distance/app.project.activeItem.frameRate)
+                                    selectedLayers[i].outPoint = selectedLayers[i].startTime + (distance*frameLength);
                             } else {
                                     selectedLayers[i].outPoint = oldOut;
                             }
