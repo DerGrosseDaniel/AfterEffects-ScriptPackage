@@ -48,6 +48,7 @@
 
 
             myPanel.grp.apply.onClick = function() {
+                
                 //read GUI values
                 var mode = myPanel.grp.modeGroup.modeSelector.selection;
 
@@ -71,17 +72,18 @@
                 groupSize = Math.floor(groupSize);
                 myPanel.grp.layergroupingGroup.layergrouping.text = groupSize
 
-
+                
                 var activeItem = app.project.activeItem;
                 var currentTime = app.project.activeItem.time;
+                
 
 
-
+                
                 if (activeItem == null || !(activeItem instanceof CompItem)) {
                     alert("Please establish a comp as the active item, select the layers you want to sequence and run the script again");
                 } else {
                     var selectedLayers = app.project.activeItem.selectedLayers;
-
+                    //alert(selectedLayers)
                     for (i = 0; i < selectedLayers.length; i++) {
 
                         var oldOut = selectedLayers[i].outPoint;
