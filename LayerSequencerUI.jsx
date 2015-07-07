@@ -5,7 +5,7 @@
             var myPanel = (thisObj instanceof Panel) ? thisObj : new Window("palette", "Layer Sequencer", [0, 0, 300, 300]);
 
 
-            res = "group{orientation:'column', alignment:['fill', 'fill'], alignChildren:['fill', 'fill'],\
+            res = "group{orientation:'column', alignment:['fill', 'top'], alignChildren:['fill', 'fill'],\
                                  modeGroup: Group{orientation:'row', alignment:['left', 'left'], alignChildren:['left', 'left'],\
                                         modeDescription: StaticText{text:'Move layers relative to:'},\
                                         modeSelector: DropDownList{properties:{items:['Current pos', 'Comp start', 'Cursor']}}\
