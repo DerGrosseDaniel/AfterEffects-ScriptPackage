@@ -16,4 +16,4 @@ Enables every proxy in the entire project
 Disables every proxy in the entire project
 
 
-'Use everything at your own risk.'
+*Use everything at your own risk.*
