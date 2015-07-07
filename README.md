@@ -1,18 +1,18 @@
 # AfterEffects-ScriptPackage
 
-## LayerSequencer
-AfterEffects Script which automates Layer-Animation by moving it left and right
+## LayerSequencer & LayerSequencer UI
+AfterEffects Script which automates Layer-Animation by moving it left and right. You should use the UI-Version.
 
 ##Subtitles
 Takes srt file and sets text as keyframes in textlayer.
 
-##Enable all proxies
-Enables every proxy in the entire project.
+##Proxy Switcher
+Enables/Disables every proxy in the entire project. This is an UI-panel.
 
-##Enable all proxies
+###Enable all proxies
 Enables every proxy in the entire project
 
-##Disable all proxies
+###Disable all proxies
 Disables every proxy in the entire project
 
 
