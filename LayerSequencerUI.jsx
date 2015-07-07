@@ -48,6 +48,8 @@
 
 
             myPanel.grp.apply.onClick = function() {
+
+                var frameLength = 1/app.project.activeItem.frameRate;
                 
                 //read GUI values
                 var mode = myPanel.grp.modeGroup.modeSelector.selection;
@@ -91,15 +93,15 @@
                             var oldStart = selectedLayers[i].inPoint;
 
                             if (mode == 0) { //realtiveToCurrent
-                                selectedLayers[i].inPoint = selectedLayers[i].inPoint + Math.floor(i / groupSize) * distance * frameLength;
+                                selectedLayers[i].startTime = selectedLayers[i].startTime + Math.floor(i / groupSize) * distance * frameLength;
                             }
 
                             if (mode == 1) { //relativeToStart
-                                selectedLayers[i].inPoint = Math.floor(i / groupSize) * distance * frameLength;
+                                selectedLayers[i].startTime = Math.floor(i / groupSize) * distance * frameLength - (selectedLayers[i].inPoint-selectedLayers[i].startTime);
                             }
 
                             if (mode == 2) { //relativeToCursor
-                                selectedLayers[i].inPoint = currentTime + Math.floor(i / groupSize) * distance * frameLength;
+                                selectedLayers[i].startTime = currentTime + Math.floor(i / groupSize) * distance * frameLength - (selectedLayers[i].inPoint-selectedLayers[i].startTime);
 
                             }
 
