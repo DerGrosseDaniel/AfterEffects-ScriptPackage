@@ -1,4 +1,4 @@
-{
+{ //http://forums.cgsociety.org/archive/index.php?t-453636.html
 
     app.beginUndoGroup("Position and Orientation to File");
 
