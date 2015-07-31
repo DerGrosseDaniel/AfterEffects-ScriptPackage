@@ -1,0 +1,1 @@
+﻿{    app.beginUndoGroup("Delete every second layer");            var selectedLayers = app.project.activeItem.selectedLayers;        for(i = 0;i < selectedLayers.length;i+=2){            selectedLayers[i].remove();        }    app.endUndoGroup(); }
