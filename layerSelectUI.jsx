@@ -31,7 +31,7 @@
                 var currentTime = app.project.activeItem.time;
                 //adds all layers which start after cursor to selection
                 for(i = 1; i <= activeComp.numLayers;i++){
-                    if(activeComp.layer(i).outPoint <= currentTime){
+                    if(activeComp.layer(i).outPoint <= currentTime &&  !activeComp.layer(i).locked){
                         activeComp.layer(i).selected = true;
                         }
                     }
@@ -45,7 +45,7 @@
                 var currentTime = app.project.activeItem.time;
                 //adds all layers which start after cursor to selection
                 for(i = 1; i <= activeComp.numLayers;i++){
-                    if(activeComp.layer(i).inPoint <= currentTime && activeComp.layer(i).outPoint >= currentTime ){
+                    if(activeComp.layer(i).inPoint <= currentTime && activeComp.layer(i).outPoint >= currentTime &&  !activeComp.layer(i).locked){
                         activeComp.layer(i).selected = true;
                         }
                     }
@@ -59,7 +59,7 @@
                 var currentTime = app.project.activeItem.time;
                 //adds all layers which start after cursor to selection
                 for(i = 1; i <= activeComp.numLayers;i++){
-                    if(activeComp.layer(i).inPoint >= currentTime){
+                    if(activeComp.layer(i).inPoint >= currentTime &&  !activeComp.layer(i).locked){
                         activeComp.layer(i).selected = true;
                         }
                     }
