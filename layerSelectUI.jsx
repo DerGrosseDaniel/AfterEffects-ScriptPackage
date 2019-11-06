@@ -49,7 +49,7 @@
                 var activeComp = app.project.activeItem;
                //adds all layers which start after cursor to selection
                 for(i = 1; i <= activeComp.numLayers;i++){
-                    if(activeComp.layer(i).name.indexOf(myPanel.grp.nameSelect.lineA.searchText.text)==0){
+                    if(activeComp.layer(i).name.indexOf(myPanel.grp.nameSelect.lineA.searchText.text)==0 &&  !activeComp.layer(i).locked){
                         if(myPanel.grp.nameSelect.lineA.selDesel.value){
                             activeComp.layer(i).selected = true;
                             }else{
@@ -66,7 +66,7 @@
                 var activeComp = app.project.activeItem;
                //adds all layers which start after cursor to selection
                 for(i = 1; i <= activeComp.numLayers;i++){
-                    if(activeComp.layer(i).name.indexOf(myPanel.grp.nameSelect.lineA.searchText.text)>=0){
+                    if(activeComp.layer(i).name.indexOf(myPanel.grp.nameSelect.lineA.searchText.text)>=0 &&  !activeComp.layer(i).locked){
                         if(myPanel.grp.nameSelect.lineA.selDesel.value){
                             activeComp.layer(i).selected = true;
                             }else{
@@ -82,7 +82,7 @@
                 var activeComp = app.project.activeItem;
                //adds all layers which start after cursor to selection
                 for(i = 1; i <= activeComp.numLayers;i++){
-                    if(activeComp.layer(i).name.indexOf(myPanel.grp.nameSelect.lineA.searchText.text)==activeComp.layer(i).name.length-myPanel.grp.nameSelect.lineA.searchText.text.length){
+                    if(activeComp.layer(i).name.indexOf(myPanel.grp.nameSelect.lineA.searchText.text)==activeComp.layer(i).name.length-myPanel.grp.nameSelect.lineA.searchText.text.length &&  !activeComp.layer(i).locked){
                         if(myPanel.grp.nameSelect.lineA.selDesel.value){
                             activeComp.layer(i).selected = true;
                             }else{
