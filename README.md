@@ -3,7 +3,7 @@
 Here are mmultiple oy ma Script.
 
 ## LayerSelectUI
-![Alt text](Screenshots/layerSelectUI2?raw=true "Title")
+![Alt text](Screenshots/layerSelectUI2.png)
 You can select and deselect layers relative to cursor position, by layer name or by color.
 
 ## LayerSequencer & LayerSequencer UI
