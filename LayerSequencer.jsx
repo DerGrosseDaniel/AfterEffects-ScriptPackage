@@ -475,12 +475,10 @@ function applySequence(random, forceToCursor){
             
         for(i = 0; i< numberOfGroups; i++){
             for(j = 0; j<layersPerGroup;j++){
-                try{
-                    oldOut = Math.max(selectedLayers[layerNumber].inPoint,selectedLayers[layerNumber].outPoint)
-                }catch (error){}
                 layerNumber = i*layersPerGroup+j;
                 if(layerNumber >=numberOfSelectedLayers) //checks if there are still selected layers
                     continue;
+                oldOut = Math.max(selectedLayers[layerNumber].inPoint,selectedLayers[layerNumber].outPoint)
                 selectedLayers[layerNumber].startTime = LayerSequenceStartTime; //set LayerSequenceStartTime time to cursor or comp start
                 selectedLayers[layerNumber].startTime -= selectedLayers[layerNumber].inPoint - selectedLayers[layerNumber].startTime //setts in point  to LayerSequenceStartTime
                 if(selectedLayers[layerNumber].outPoint < selectedLayers[layerNumber].inPoint)
@@ -504,12 +502,10 @@ function applySequence(random, forceToCursor){
         //alert("move relative to current position")
         for(i = 0; i< numberOfGroups; i++){
             for(j = 0; j<layersPerGroup;j++){
-                try{
-                    oldOut = Math.max(selectedLayers[layerNumber].inPoint,selectedLayers[layerNumber].outPoint)
-                }catch (error){}
                 layerNumber = i*layersPerGroup+j;
                 if(layerNumber >=numberOfSelectedLayers) //checks if there are still selected layers
                     continue;
+                oldOut = Math.max(selectedLayers[layerNumber].inPoint,selectedLayers[layerNumber].outPoint)
                 selectedLayers[layerNumber].startTime += groupMovements[i]*frameLength*framesToMove;
                 
                 if(forceOnFrame.value)
