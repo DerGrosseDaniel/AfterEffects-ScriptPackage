@@ -2,7 +2,7 @@
 
 /*
 Code for Import https://scriptui.joonas.me — (Triple click to select): 
-{"activeId":5,"items":{"item-0":{"id":0,"type":"Dialog","parentId":false,"style":{"enabled":true,"varName":"myPanel","windowType":"Palette","creationProps":{"su1PanelCoordinates":false,"maximizeButton":false,"minimizeButton":false,"independent":false,"closeButton":true,"borderless":false,"resizeable":true},"text":"","preferredSize":[0,0],"margins":0,"orientation":"row","spacing":25,"alignChildren":["left","top"]}},"item-1":{"id":1,"type":"Group","parentId":0,"style":{"enabled":true,"varName":"left","preferredSize":[0,0],"margins":0,"orientation":"column","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-2":{"id":2,"type":"Group","parentId":0,"style":{"enabled":true,"varName":"right","preferredSize":[0,0],"margins":0,"orientation":"column","spacing":10,"alignChildren":["fill","center"],"alignment":null}},"item-3":{"id":3,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line1L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-4":{"id":4,"type":"StaticText","parentId":3,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"move relative to","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-5":{"id":5,"type":"DropDownList","parentId":3,"style":{"enabled":true,"varName":"moveMode","text":"DropDownList","listItems":"Cursor,  Current position, Comp start","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":""}},"item-6":{"id":6,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line1R","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-7":{"id":7,"type":"StaticText","parentId":3,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"move Out","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-8":{"id":8,"type":"DropDownList","parentId":3,"style":{"enabled":true,"varName":"outMode","text":"DropDownList","listItems":"move Out, pin Out","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-9":{"id":9,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line2L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-10":{"id":10,"type":"StaticText","parentId":9,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"frames to move    ","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-11":{"id":11,"type":"EditText","parentId":9,"style":{"enabled":true,"varName":"numFrames","creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"10","justify":"left","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-12":{"id":12,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesPlus","text":"+","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-13":{"id":13,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesMinus","text":"-","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-14":{"id":14,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesOne","text":"1","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-15":{"id":15,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesFive","text":"5","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-16":{"id":16,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesTen","text":"10","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-17":{"id":17,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line2R","preferredSize":[0,27],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-18":{"id":18,"type":"StaticText","parentId":28,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Group layers","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-19":{"id":19,"type":"EditText","parentId":28,"style":{"enabled":true,"varName":"groupCount","creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"1","justify":"left","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-20":{"id":20,"type":"Button","parentId":28,"style":{"enabled":true,"varName":"groupPlus","text":"+","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-21":{"id":21,"type":"Button","parentId":28,"style":{"enabled":true,"varName":"groupMinus","text":"-","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-22":{"id":22,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line3R","preferredSize":[0,27],"margins":0,"orientation":"row","spacing":10,"alignChildren":["center","center"],"alignment":null}},"item-23":{"id":23,"type":"Checkbox","parentId":17,"style":{"enabled":true,"varName":"forceOnFrame","text":"force positions on exact frames","preferredSize":[0,0],"alignment":null,"helpTip":null,"checked":false}},"item-24":{"id":24,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line3L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-25":{"id":25,"type":"StaticText","parentId":24,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Layer distribution","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-26":{"id":26,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line4R","preferredSize":[0,27],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-27":{"id":27,"type":"Button","parentId":37,"style":{"enabled":true,"varName":"everythingToCursor","text":"Everything back to cursor","justify":"center","preferredSize":[200,0],"alignment":null,"helpTip":null}},"item-28":{"id":28,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line4L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","bottom"],"alignment":null}},"item-29":{"id":29,"type":"Button","parentId":36,"style":{"enabled":true,"varName":"apply","text":"Apply","justify":"center","preferredSize":[250,0],"alignment":null,"helpTip":null}},"item-30":{"id":30,"type":"IconButton","parentId":24,"style":{"enabled":true,"varName":"distributionLinear","text":"","preferredSize":[0,0],"creationProps":{"style":"toolbutton","toggle":false},"iconButtonStroke":false,"image":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAXElEQVRIidWSyQ0AIAgE0dh/EdRHD1jBSiQcOl8fTGYdqkqdzNbrRLSyDzDzMXG6gIgc30f3HwgrYKVOF7BSI/6bwJs6TMCbGvHuBNGprwWiUyP6J6hKDQWqUiM2g7UrbsfDfYMAAAAASUVORK5CYIJCYII="],"alignment":null,"helpTip":null}},"item-31":{"id":31,"type":"IconButton","parentId":24,"style":{"enabled":true,"varName":"distributionCLoser","text":"","preferredSize":[0,0],"creationProps":{"style":"toolbutton","toggle":false},"iconButtonStroke":false,"image":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAX0lEQVRIid2Suw0AIAgFwbj/EMzHDliZ2EDU8Ilea8HlnigiUEkrvQ4APeMIEamZUwSYWX3D6j8QWsBKnyJgpZ/8N8FO9lCBnewrb05wmtld4DSzRf0EnjmvBDxz3jAAqCMrbhGIA04AAAAASUVORK5CYIKC"],"alignment":null,"helpTip":null}},"item-32":{"id":32,"type":"IconButton","parentId":24,"style":{"enabled":true,"varName":"distributionFurther","text":"","preferredSize":[0,0],"creationProps":{"style":"toolbutton","toggle":false},"iconButtonStroke":false,"image":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAX0lEQVRIic3SwQ3AIAxD0U/F/kNkvuwQrpV6aCIRjM8IrGdGRKDMI30dmB2XmlmataWAu6fPDvUfKAtUeFsKVHgzuW+C3cTlAruJ/3LHBKfZPwVOs7+jn0DJDzCV/AALdesrbmd70iMAAAAASUVORK5CYIKC"],"alignment":null,"helpTip":null}},"item-33":{"id":33,"type":"EditText","parentId":24,"style":{"enabled":true,"varName":"distributionFactor","creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"1","justify":"left","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-34":{"id":34,"type":"Button","parentId":36,"style":{"enabled":true,"varName":"applyRandom","text":"Apply random","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-35":{"id":35,"type":"Slider","parentId":22,"style":{"enabled":true,"varName":"distributionSlider","preferredSize":[200,0],"alignment":"fill","helpTip":null}},"item-36":{"id":36,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line5L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","bottom"],"alignment":null}},"item-37":{"id":37,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line5R","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-39":{"id":39,"type":"StaticText","parentId":26,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"group start at","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-40":{"id":40,"type":"DropDownList","parentId":26,"style":{"enabled":true,"varName":"groupGrouping","text":"DropDownList","listItems":"automatic, earliest layer, first layer, last layer","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-41":{"id":41,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesOneMinus","text":"-1","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}}},"order":[0,1,3,4,5,7,8,9,10,11,13,12,14,15,16,41,24,25,31,30,32,33,28,18,19,21,20,36,29,34,2,6,17,23,22,35,26,39,40,37,27],"settings":{"importJSON":true,"indentSize":false,"cepExport":false,"includeCSSJS":true,"showDialog":true,"functionWrapper":false,"afterEffectsDockable":true,"itemReferenceList":"None"}}
+{"activeId":39,"items":{"item-0":{"id":0,"type":"Dialog","parentId":false,"style":{"enabled":true,"varName":"myPanel","windowType":"Palette","creationProps":{"su1PanelCoordinates":false,"maximizeButton":false,"minimizeButton":false,"independent":false,"closeButton":true,"borderless":false,"resizeable":true},"text":"","preferredSize":[0,0],"margins":0,"orientation":"row","spacing":25,"alignChildren":["left","top"]}},"item-1":{"id":1,"type":"Group","parentId":0,"style":{"enabled":true,"varName":"left","preferredSize":[0,0],"margins":0,"orientation":"column","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-2":{"id":2,"type":"Group","parentId":0,"style":{"enabled":true,"varName":"right","preferredSize":[0,0],"margins":0,"orientation":"column","spacing":10,"alignChildren":["fill","center"],"alignment":null}},"item-3":{"id":3,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line1L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-4":{"id":4,"type":"StaticText","parentId":3,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"move relative to","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-5":{"id":5,"type":"DropDownList","parentId":3,"style":{"enabled":true,"varName":"moveMode","text":"DropDownList","listItems":"Cursor,  Current position, Comp start","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":""}},"item-6":{"id":6,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line1R","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-7":{"id":7,"type":"StaticText","parentId":3,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"move Out","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-8":{"id":8,"type":"DropDownList","parentId":3,"style":{"enabled":true,"varName":"outMode","text":"DropDownList","listItems":"move Out, pin Out","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-9":{"id":9,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line2L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-10":{"id":10,"type":"StaticText","parentId":9,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"frames to move    ","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-11":{"id":11,"type":"EditText","parentId":9,"style":{"enabled":true,"varName":"numFrames","creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"10","justify":"left","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-12":{"id":12,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesPlus","text":"+","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-13":{"id":13,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesMinus","text":"-","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-14":{"id":14,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesOne","text":"1","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-15":{"id":15,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesFive","text":"5","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-16":{"id":16,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesTen","text":"10","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-17":{"id":17,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line2R","preferredSize":[0,27],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-18":{"id":18,"type":"StaticText","parentId":28,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Group layers","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-19":{"id":19,"type":"EditText","parentId":28,"style":{"enabled":true,"varName":"groupCount","creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"1","justify":"left","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-20":{"id":20,"type":"Button","parentId":28,"style":{"enabled":true,"varName":"groupPlus","text":"+","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-21":{"id":21,"type":"Button","parentId":28,"style":{"enabled":true,"varName":"groupMinus","text":"-","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-22":{"id":22,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line3R","preferredSize":[0,27],"margins":0,"orientation":"row","spacing":10,"alignChildren":["center","center"],"alignment":null}},"item-23":{"id":23,"type":"Checkbox","parentId":17,"style":{"enabled":true,"varName":"forceOnFrame","text":"force positions on exact frames","preferredSize":[0,25],"alignment":null,"helpTip":null,"checked":false}},"item-24":{"id":24,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line3L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-25":{"id":25,"type":"StaticText","parentId":24,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"Layer distribution","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-26":{"id":26,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line4R","preferredSize":[0,27],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-27":{"id":27,"type":"Button","parentId":37,"style":{"enabled":true,"varName":"everythingToCursor","text":"Everything back to cursor","justify":"center","preferredSize":[200,0],"alignment":null,"helpTip":null}},"item-28":{"id":28,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line4L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","bottom"],"alignment":null}},"item-29":{"id":29,"type":"Button","parentId":36,"style":{"enabled":true,"varName":"apply","text":"Apply","justify":"center","preferredSize":[250,0],"alignment":null,"helpTip":null}},"item-30":{"id":30,"type":"IconButton","parentId":24,"style":{"enabled":true,"varName":"distributionLinear","text":"","preferredSize":[0,0],"creationProps":{"style":"toolbutton","toggle":false},"iconButtonStroke":false,"image":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAXElEQVRIidWSyQ0AIAgE0dh/EdRHD1jBSiQcOl8fTGYdqkqdzNbrRLSyDzDzMXG6gIgc30f3HwgrYKVOF7BSI/6bwJs6TMCbGvHuBNGprwWiUyP6J6hKDQWqUiM2g7UrbsfDfYMAAAAASUVORK5CYIJCYII="],"alignment":null,"helpTip":null}},"item-31":{"id":31,"type":"IconButton","parentId":24,"style":{"enabled":true,"varName":"distributionCLoser","text":"","preferredSize":[0,0],"creationProps":{"style":"toolbutton","toggle":false},"iconButtonStroke":false,"image":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAX0lEQVRIid2Suw0AIAgFwbj/EMzHDliZ2EDU8Ilea8HlnigiUEkrvQ4APeMIEamZUwSYWX3D6j8QWsBKnyJgpZ/8N8FO9lCBnewrb05wmtld4DSzRf0EnjmvBDxz3jAAqCMrbhGIA04AAAAASUVORK5CYIKC"],"alignment":null,"helpTip":null}},"item-32":{"id":32,"type":"IconButton","parentId":24,"style":{"enabled":true,"varName":"distributionFurther","text":"","preferredSize":[0,0],"creationProps":{"style":"toolbutton","toggle":false},"iconButtonStroke":false,"image":["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAX0lEQVRIic3SwQ3AIAxD0U/F/kNkvuwQrpV6aCIRjM8IrGdGRKDMI30dmB2XmlmataWAu6fPDvUfKAtUeFsKVHgzuW+C3cTlAruJ/3LHBKfZPwVOs7+jn0DJDzCV/AALdesrbmd70iMAAAAASUVORK5CYIKC"],"alignment":null,"helpTip":null}},"item-33":{"id":33,"type":"EditText","parentId":24,"style":{"enabled":true,"varName":"distributionFactor","creationProps":{"noecho":false,"readonly":false,"multiline":false,"scrollable":false,"borderless":false,"enterKeySignalsOnChange":false},"softWrap":false,"text":"1","justify":"left","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-34":{"id":34,"type":"Button","parentId":36,"style":{"enabled":true,"varName":"applyRandom","text":"Apply random","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-35":{"id":35,"type":"Slider","parentId":22,"style":{"enabled":true,"varName":"distributionSlider","preferredSize":[200,27],"alignment":"fill","helpTip":null}},"item-36":{"id":36,"type":"Group","parentId":1,"style":{"enabled":true,"varName":"line5L","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","bottom"],"alignment":null}},"item-37":{"id":37,"type":"Group","parentId":2,"style":{"enabled":true,"varName":"line5R","preferredSize":[0,26],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-39":{"id":39,"type":"StaticText","parentId":26,"style":{"enabled":true,"varName":null,"creationProps":{"truncate":"none","multiline":false,"scrolling":false},"softWrap":false,"text":"group start at","justify":"left","preferredSize":[0,26],"alignment":null,"helpTip":null}},"item-40":{"id":40,"type":"DropDownList","parentId":26,"style":{"enabled":true,"varName":"groupGrouping","text":"DropDownList","listItems":"automatic, earliest layer, first layer, last layer","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-41":{"id":41,"type":"Button","parentId":9,"style":{"enabled":true,"varName":"framesOneMinus","text":"-1","justify":"center","preferredSize":[30,25],"alignment":null,"helpTip":null}},"item-42":{"id":42,"type":"DropDownList","parentId":28,"style":{"enabled":true,"varName":"groupMode","text":"DropDownList","listItems":"move groups, process every group","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}}},"order":[0,1,3,4,5,7,8,9,10,11,13,12,14,15,16,41,24,25,31,30,32,33,28,18,19,21,20,42,36,29,34,2,6,17,23,22,35,26,39,40,37,27],"settings":{"importJSON":true,"indentSize":false,"cepExport":false,"includeCSSJS":true,"showDialog":true,"functionWrapper":false,"afterEffectsDockable":true,"itemReferenceList":"None"}}
 */ 
 
 // MYPANEL
@@ -139,6 +139,10 @@ var groupPlus = line4L.add("button", undefined, undefined, {name: "groupPlus"});
     groupPlus.text = "+"; 
     groupPlus.preferredSize.width = 30; 
 
+var groupMode_array = ["move groups","process every group"]; 
+var groupMode = line4L.add("dropdownlist", undefined, undefined, {name: "groupMode", items: groupMode_array}); 
+    groupMode.selection = 0; 
+
 // LINE5L
 // ======
 var line5L = left.add("group", undefined, {name: "line5L"}); 
@@ -183,6 +187,7 @@ var line2R = right.add("group", undefined, {name: "line2R"});
 
 var forceOnFrame = line2R.add("checkbox", undefined, undefined, {name: "forceOnFrame"}); 
     forceOnFrame.text = "force positions on exact frames"; 
+    forceOnFrame.preferredSize.height = 25; 
 
 // LINE3R
 // ======
@@ -198,6 +203,7 @@ var distributionSlider = line3R.add("slider", undefined, undefined, undefined, u
     distributionSlider.maxvalue = 100; 
     distributionSlider.value = 50; 
     distributionSlider.preferredSize.width = 200; 
+    distributionSlider.preferredSize.height = 27; 
     distributionSlider.alignment = ["center","fill"]; 
 
 // LINE4R
@@ -211,6 +217,7 @@ var line4R = right.add("group", undefined, {name: "line4R"});
 
 var statictext6 = line4R.add("statictext", undefined, undefined, {name: "statictext6"}); 
     statictext6.text = "group start at"; 
+    statictext6.preferredSize.height = 26; 
 
 var groupGrouping_array = ["automatic","earliest layer","first layer","last layer"]; 
 var groupGrouping = line4R.add("dropdownlist", undefined, undefined, {name: "groupGrouping", items: groupGrouping_array}); 
@@ -238,8 +245,9 @@ if ( myPanel instanceof Window ) myPanel.show();
 
 
 
-
 // ====================================================== Logic =====================================================
+
+var lastEverythingBack = new Date().getTime();     
 
 // ====================================================== Frames Buttons =====================================================
 
@@ -332,8 +340,8 @@ function forceEverythingOnFrame(layer, frameRate){
 }
   
 
-function applySequence(random, forceToCursor){
-    
+function applySequence(random, forceToCursor, processEveryGroup){
+        
     var activeItem = app.project.activeItem;
     if (activeItem == null || !(activeItem instanceof CompItem)) {
         alert("Please establish a comp as the active item, select the layers you want to sequence and run the script again");
@@ -347,6 +355,46 @@ function applySequence(random, forceToCursor){
     var numberOfGroups = Math.ceil(selectedLayers.length/layersPerGroup)
     var frameRate = app.project.activeItem.frameRate
     var frameLength = 1/frameRate;
+    
+    //check Groupe Mode (if groups are moved or layers inside of group
+    if(groupMode.selection == 1 && processEveryGroup == false){   //if process everything in group
+        //copy selected layer
+        originalSelection = selectedLayers.slice()
+        //deselect all layer
+        for(i = 0; i < originalSelection.length;i++){
+            originalSelection[i].selected = false;
+        }
+        for(g=0; g< numberOfGroups; g++){
+            //set selection only to one group at a time
+             for(j=0; j<layersPerGroup;j++){
+                try{
+                    originalSelection[g*layersPerGroup+j].selected = true;
+                }catch(e){//no more layers over
+                }
+              }
+            //rerun this function and apply sequencing
+            applySequence(random,forceToCursor,true);
+             //deselect processed group
+             for(j=0; j<layersPerGroup;j++){
+                try{
+                    originalSelection[g*layersPerGroup+j].selected = false;
+                }catch(e){//no more layers over
+                }
+              }
+        }
+        //reset selection to user selection
+        for(i = 0; i < originalSelection.length;i++){
+            originalSelection[i].selected = true;
+        }
+        //return at the end to not run rest of function
+        return;
+     }
+ 
+    //process elements in one group and not group by group
+    if(processEveryGroup == true){
+        layersPerGroup = 1;
+        numberOfGroups = numberOfSelectedLayers;
+    }
 
     //calculate earliest layer of group for automatic group start
         //array with group size
@@ -525,15 +573,20 @@ function applySequence(random, forceToCursor){
  }
 
 apply.onClick = function(){
-    applySequence(false, false)
+    applySequence(false, false, false)
 }
 
 applyRandom.onClick = function(){
-    applySequence(true, false)
+    applySequence(true, false, false)
 }
 
-everythingToCursor.onClick = function(){
-    applySequence(false, true)
+everythingToCursor.onClick = function(){    
+    var oldTime = lastEverythingBack;
+    lastEverythingBack = new Date().getTime();
+    if(lastEverythingBack - oldTime >5000) //if the last click is longer then 5 seconds
+        applySequence(false, true, false) //move groups back
+     else //if last click is less then 5 Seconds
+        applySequence(false, true, true) //move all layers back
 }
 
 
