@@ -1,6 +1,6 @@
 # AfterEffects-ScriptPackage
 
-Here are mmultiple oy ma Script.
+Here are multiple of my Scripts.
 
 ## LayerSelectUI
 ![Alt text](Screenshots/layerSelectUI2.png)
