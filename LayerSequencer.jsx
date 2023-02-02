@@ -505,7 +505,6 @@ function applySequence(random, forceToCursor, processEveryGroup){
 
     
     //apply movements
-    app.beginUndoGroup("Layer Sequencer");
 
     var framesToMove = parseFloat(numFrames.text);
     
@@ -569,24 +568,29 @@ function applySequence(random, forceToCursor, processEveryGroup){
 
 
     
-    app.endUndoGroup();
  }
 
 apply.onClick = function(){
+    app.beginUndoGroup("Layer Sequencer");
     applySequence(false, false, false)
+     app.endUndoGroup();
 }
 
 applyRandom.onClick = function(){
+    app.beginUndoGroup("Random Layer Sequencer");
     applySequence(true, false, false)
+    app.endUndoGroup();
 }
 
 everythingToCursor.onClick = function(){    
+    app.beginUndoGroup("Everything back to cursor");
     var oldTime = lastEverythingBack;
     lastEverythingBack = new Date().getTime();
     if(lastEverythingBack - oldTime >5000) //if the last click is longer then 5 seconds
         applySequence(false, true, false) //move groups back
      else //if last click is less then 5 Seconds
         applySequence(false, true, true) //move all layers back
+      app.endUndoGroup();
 }
 
 
